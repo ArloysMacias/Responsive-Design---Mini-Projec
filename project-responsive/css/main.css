@@ -1,0 +1,55 @@
+body, html{
+    height: 100%;/*esto lo hago porque no se muestra el main de abajo y este es el padre del main*/
+    margin: 0;
+    color: whitesmoke;/*todas las letras y textos que se escriban dentro del body seran blancas*/
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;    
+    background-color: orangered;
+    padding:15px 25px;
+}
+
+.main{
+    height: 100%;/*esto lo hago porque no se muestra el section de abajo y este es el padre del section*/
+}
+
+.section{
+    background-color: #06065aef;
+    height: 100%;
+}
+
+.vcenter{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);/*Para moverlo de abajo hacia arriba -50   de arria hacia abajo 50*/ 
+}
+
+.section-paragraph{
+    font-size: 1em;/*equivale a 16px*/
+    margin: 25px;
+}
+
+.footer{
+    background-color: black;
+    padding: 15px;
+}
+
+/*A partir de los 992pixeles se aplicara lo sieguiente   
+Se dividiran las columnas en 2
+*/
+@media(min-width:992px){/*A partir de este MINIMO*/
+                        /*Si dice max es hasta es MAXIMO*/ 
+    .column{
+        float: left;
+    }    
+    .column-40{         
+        width: 40%;
+    }
+    .column-60{
+        width: 60%;
+    }
+}
