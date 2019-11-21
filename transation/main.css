@@ -1,0 +1,17 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition:width 2s;
+    
+    /*
+    transition: prop time;
+    
+    es lo mismo que esto
+    transition-property: width;
+    transition-duration: 2s;
+    */
+}
+.box:hover {
+    width: 300px;
+}
