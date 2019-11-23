@@ -1,0 +1,14 @@
+.box{
+    background-color: black;
+    width: 150%;
+    height: 0;
+
+}
+@keyframes growing{
+    from{
+        height: 0;
+    }
+    to{
+        height: 150%;
+    }
+}
