@@ -2,7 +2,9 @@
     width: 100px;
     height: 100px;
     background-color: red;
-    transition:width 2s;
+    transition-property: width, background-color;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(1.000, 0.010, 0.000, 1.115); /* custom */
     
     /*
     transition: prop time;
@@ -14,4 +16,5 @@
 }
 .box:hover {
     width: 300px;
+    background-color: rgb(10, 94, 7);
 }

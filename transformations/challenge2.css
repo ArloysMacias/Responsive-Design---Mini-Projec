@@ -1,0 +1,18 @@
+.container-imagen{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    
+    transition-property: all;
+    transition-timing-function: ease-out;
+    transition-duration: 1s;
+}
+img{
+    width: inherit;
+    height: inherit;    
+}
+.container-imagen:focus{
+    transform: rotateY(180deg);
+}
